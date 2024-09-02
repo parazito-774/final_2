@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/burger-menu.css" />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="./Swiper/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Burger Menu Hidden-->
+    <div class="burgermenu-container hidden">
+      <a href="#" class="burgermenu-items">Home</a>
+      <a href="#" class="burgermenu-items">Menu</a>
+      <a href="#" class="burgermenu-items">Blog</a>
+      <a href="#" class="burgermenu-items">Our story</a>
+    </div>
+
+    <!-- Main Html Code-->
+    <div class="container">
+      <header class="header" id="header">
+        <nav class="nav-bar">
+          <div class="header-nav-container">
+            <img
+              src="./Assets/Images/logo.png"
+              alt="logo"
+              class="header-nav-title"
+            />
+            <ul class="header-nav-sections-container">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#" style="margin: 0">Our story</a></li>
+            </ul>
+            <button>Log in</button>
+            <!-- This Icon Appears on tablet resolution -->
+            <img
+              src="./Assets/Images/menu-icon.svg"
+              alt="menu-icon"
+              class="menu-icon"
+            />
+          </div>
+        </nav>
+
+        <!-- Its going to appear on tablet resolution -->
+        <div class="header-blog">
+          <div class="header-blog-container">
+            <div class="header-blog-banner">
+              <h2 class="header-blog-banner-title">BLOG</h2>
+            </div>
+            <div class="header-blog-search-container">
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  gap: 8px;
+                  overflow: hidden;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  style="cursor: pointer"
+                >
+                  <path
+                    d="M15.7372 14.4753L12.7159 11.463C13.6907 10.2211 14.2196 8.68756 14.2176 7.10882C14.2176 5.70283 13.8007 4.32841 13.0196 3.15937C12.2385 1.99033 11.1282 1.07918 9.82925 0.54113C8.53028 0.00308012 7.10094 -0.137698 5.72196 0.136597C4.34299 0.410893 3.07631 1.08794 2.08213 2.08213C1.08794 3.07631 0.410893 4.34299 0.136597 5.72196C-0.137698 7.10094 0.00308012 8.53028 0.54113 9.82925C1.07918 11.1282 1.99033 12.2385 3.15937 13.0196C4.32841 13.8007 5.70283 14.2176 7.10882 14.2176C8.68756 14.2196 10.2211 13.6907 11.463 12.7159L14.4753 15.7372C14.5579 15.8204 14.6562 15.8865 14.7645 15.9317C14.8728 15.9768 14.9889 16 15.1062 16C15.2236 16 15.3397 15.9768 15.448 15.9317C15.5563 15.8865 15.6545 15.8204 15.7372 15.7372C15.8204 15.6545 15.8865 15.5563 15.9317 15.448C15.9768 15.3397 16 15.2236 16 15.1062C16 14.9889 15.9768 14.8728 15.9317 14.7645C15.8865 14.6562 15.8204 14.5579 15.7372 14.4753ZM1.77721 7.10882C1.77721 6.05433 2.0899 5.02352 2.67575 4.14674C3.26159 3.26996 4.09428 2.58659 5.0685 2.18305C6.04273 1.77952 7.11474 1.67393 8.14897 1.87965C9.1832 2.08538 10.1332 2.59316 10.8788 3.3388C11.6245 4.08444 12.1323 5.03444 12.338 6.06868C12.5437 7.10291 12.4381 8.17492 12.0346 9.14914C11.6311 10.1234 10.9477 10.9561 10.0709 11.5419C9.19413 12.1277 8.16332 12.4404 7.10882 12.4404C5.69479 12.4404 4.33867 11.8787 3.3388 10.8788C2.33893 9.87897 1.77721 8.52285 1.77721 7.10882Z"
+                    fill="#7C7C7C"
+                  />
+                </svg>
+                <input
+                  type="search"
+                  placeholder="Search"
+                  class="header-blog-search-input"
+                />
+              </div>
+            </div>
+
+            <div class="header-blog-section-container">
+              <button class="all-item">All</button>
+              <a href="#" class="other-items">Technology</a>
+              <a href="#" class="other-items">News</a>
+              <a href="#" class="other-items">Design</a>
+              <a href="#" class="other-items">Brandig</a>
+              <a href="#" class="other-items">Web</a>
+              <a href="#" class="other-items">Product development</a>
+            </div>
+          </div>
+        </div>
+
+      
+      </header>
+
+      <div class="header-card-box">
+        <div class="header-card-background swiper">
+          <div class="swiper-wrapper">
+            <div class="header-card-imagebox swiper-slide"></div>
+            <div class="header-card-imagebox swiper-slide"></div>
+            <div class="header-card-imagebox swiper-slide"></div>
+          </div>
+
+          <div class="swiper-button-prev">
+            <img src="./Assets/Images/prev-arrow.svg" alt="back-arrow" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="./Assets/Images/next-arrow.svg" alt="next-arrow" />
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <h2 class="main-title">Latest news</h2>
+        <div class="main-news-container">
+          <!-- Here are Cards added by javascript -->
+        </div>
+
+        <div class="main-pagination-container">
+          <div class="prev-button">Prev</div>
+          <div class="page-numbers page-1 active-page">1</div>
+          <div class="page-numbers page-2">2</div>
+          <div class="page-numbers page-3">3</div>
+          <div class="page-numbers page-4">4</div>
+          <div class="next-button">Next</div>
+        </div>
+
+        <h3 class="main-readmore">Read more</h3>
+
+        <!-- It appears on tablet resolution too -->
+        <!-- Header but its in main section in tablet -->
+        <div class="header-card-container main-card-container">
+          <div class="header-card-background">
+            <div class="header-card-imagebox"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-info">
+            <!--About Section-->
+            <div class="footer-section-container">
+              <h4 class="footer-section-title">About</h4>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+            </div>
+            <!--Policy Section-->
+            <div class="footer-section-container">
+              <h4 class="footer-section-title">Policy</h4>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+            </div>
+            <!--Contact Section-->
+            <div class="footer-section-container">
+              <h4 class="footer-section-title">Contact</h4>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <div style="border-radius: 1px; border-bottom: 2px solid #c3bfbf">
+              <h4 class="footer-section-title">Come join us</h4>
+              <div class="footer-social-input-container">
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  class="footer-social-input"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="12"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                >
+                  <path
+                    d="M1.98157 0.237467L9.74654 5.55673C9.83871 5.62005 9.90384 5.68865 9.94194 5.76253C9.98065 5.83641 10 5.91557 10 6C10 6.08443 9.98065 6.16359 9.94194 6.23747C9.90384 6.31135 9.83871 6.37995 9.74654 6.44327L1.98157 11.7784C1.76651 11.9261 1.49769 12 1.17511 12C0.852534 12 0.576036 11.9208 0.345622 11.7625C0.115208 11.6042 0 11.4195 0 11.2084C0 10.9974 0.115208 10.8127 0.345622 10.6544L7.11982 6L0.345622 1.34565C0.130569 1.19789 0.0230408 1.01594 0.0230408 0.799789C0.0230408 0.58322 0.138248 0.395778 0.368663 0.237467C0.599077 0.0791559 0.867895 0 1.17511 0C1.48233 0 1.75115 0.0791559 1.98157 0.237467Z"
+                    fill="#C4BFBF"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="footer-social-icons-container">
+              <div class="footer-social-icons-background">
+                <img src="./Assets/Images/facebook.svg" alt="facebook-logo" />
+              </div>
+              <div class="footer-social-icons-background">
+                <img src="./Assets/Images/instagram.png" alt="instagram-logo" />
+              </div>
+              <div class="footer-social-icons-background">
+                <img src="./Assets/Images/twitter.svg" alt="twitter-logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Imported Swiper-->
+    <script src="./Swiper/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.js"></script>
+    <!--Scripts-->
+    <script src="./JavaScript/slider.js"></script>
+    <script src="./JavaScript/news.js"></script>
+    <script src="./JavaScript/burger-menu.js"></script>
+    <script src="./JavaScript/headerscroll.js"></script>
+  </body>
+</html>
